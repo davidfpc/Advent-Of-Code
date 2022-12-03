@@ -47,8 +47,5 @@ object Day2 {
     private val SCORE_MAP_PART_2 = mapOf("A X" to 3, "A Y" to 4, "A Z" to 8, "B X" to 1, "B Y" to 5, "B Z" to 9, "C X" to 2, "C Y" to 6, "C Z" to 7)
     fun part2(input: List<String>): Int = input.sumOf { SCORE_MAP_PART_2[it]!! }
 
-    fun readInput(): List<String> {
-        val inputString = File("inputFiles/day2.txt").readText().dropLast(1)
-        return inputString.split("\n")
-    }
+    fun readInput(): List<String> = File("inputFiles/day2.txt").readLines()
 }
