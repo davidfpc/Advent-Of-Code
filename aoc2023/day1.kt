@@ -1,6 +1,6 @@
 package aoc2023
 
-import java.io.File
+import utils.InputRetrieval
 
 fun main() {
     Day1.execute()
@@ -43,5 +43,5 @@ private object Day1 {
         return part1(mappedInput)
     }
 
-    private fun readInput(): List<String> = File("aoc2023/inputFiles/day1.txt").readLines()
+    private fun readInput(): List<String> = InputRetrieval.getFile(2023, 1).readLines()
 }
