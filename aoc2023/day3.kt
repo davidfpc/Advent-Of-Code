@@ -16,9 +16,9 @@ private object Day3 {
 
     private fun part1(input: List<String>): Int {
         val numbers = mutableListOf<Int>()
-        var tmpNumber = ""
-        var valid = false
         input.forEachIndexed { rowIndex, row ->
+            var tmpNumber = ""
+            var valid = false
             row.forEachIndexed { colIndex, c ->
                 if (c.isDigit()) {
                     tmpNumber += c
@@ -31,6 +31,9 @@ private object Day3 {
                     valid = false
                     tmpNumber = ""
                 }
+            }
+            if (valid && tmpNumber.isNotEmpty()) {
+                numbers.add(tmpNumber.toInt())
             }
         }
         return numbers.sum()
