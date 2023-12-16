@@ -75,5 +75,5 @@ private object Day15 {
         fun focalPower(): Long = lenses.mapIndexed { index, lens -> (this.id + 1L) * (index + 1L) * lens.focalLength }.sum()
     }
 
-    data class Lens(val label: String, var focalLength: Int)
+    private data class Lens(val label: String, var focalLength: Int)
 }

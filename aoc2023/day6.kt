@@ -29,5 +29,5 @@ private object Day6 {
         return time.mapIndexed { i, c -> Race(c.toLong(), distance[i].toLong()) }
     }
 
-    data class Race(val time: Long, val recordDistance: Long)
+    private data class Race(val time: Long, val recordDistance: Long)
 }

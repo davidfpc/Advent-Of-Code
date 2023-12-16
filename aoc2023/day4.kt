@@ -36,7 +36,7 @@ private object Day4 {
         }
     }
 
-    data class ScratchCard(
+    private data class ScratchCard(
         val cardId: Int,
         val winningNumbers: List<Int>,
         val numbers: List<Int>,

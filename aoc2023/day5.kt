@@ -42,7 +42,7 @@ private object Day5 {
         return seeds to mappings
     }
 
-    data class Mapping(private val mapping: List<Triple<Long, Long, Long>>) {
+    private data class Mapping(private val mapping: List<Triple<Long, Long, Long>>) {
         fun getMappedValue(value: Long): Long {
             val map = mapping.firstOrNull { (it.first <= value) && (value < (it.first + it.third)) }
             return map?.let { it.second + (value - it.first) } ?: value

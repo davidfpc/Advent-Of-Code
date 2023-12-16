@@ -26,7 +26,7 @@ private object Day2 {
 
     private fun readInput(): List<Game> = InputRetrieval.getFile(2023, 2).readLines().map { Game.parse(it) }
 
-    data class Game(val number: Int, val rounds: List<Round>) {
+    private data class Game(val number: Int, val rounds: List<Round>) {
         companion object {
             fun parse(input: String): Game {
                 val (gameNumberStr, gamesStr) = input.split(':')
@@ -37,7 +37,7 @@ private object Day2 {
         }
     }
 
-    data class Round(val red: Int, val green: Int, val blue: Int) {
+    private data class Round(val red: Int, val green: Int, val blue: Int) {
         companion object {
             fun parse(input: String): Round {
                 val colours = input.split(',').associate { s ->
