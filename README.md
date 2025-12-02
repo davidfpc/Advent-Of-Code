@@ -4,6 +4,14 @@ This repository contains programs to solve Advent of Code puzzles.
 
 Completion: (⭐ first part, 🌟 both parts):
 
+## [Advent Of Code 2025](aoc2025):
+
+**Language:** Kotlin
+
+| Day        | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 10 | 11 | 12 |
+|------------|----|----|----|----|----|----|----|----|----|----|----|----|
+| Completion | 🌟 | 🌟 |    |    |    |    |    |    |    |    |    |    | 
+
 ## [Advent Of Code 2024](aoc2024):
 
 **Language:** Kotlin
